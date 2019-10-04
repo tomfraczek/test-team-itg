@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <div class="header--logo-holder">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="baner-wrapper">
+        <div class="baner-holder">
+            <img class="baner" src="./img/baner.png" alt="">
+            <h2 class="baner-quote">Hello [Name]</h2>
+        </div>
+    </section>
+
+    <section class="form-wrapper">
+        
+        <form id="testForm" action="">
+            
+            <div class="test-form form-q1">
+                    <h2>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at suscipit urna?</h2>
+
+                    <div class="form-answer form-q1--a1">
+                        <input type="checkbox" id="q1a1" name="q1a1">
+                        <label for="q1a1">Vivamus eleifend dapibus justo sit amet pharetra.</label>
+                    </div>      
+
+                    <div class="form-answer form-q1--a2">
+                        <input type="checkbox" id="q1a2" name="q1a2">
+                        <label for="q1a2">Nullam viverra gravida orci id imperdiet.</label>
+                    </div>
+
+                    <div class="form-answer form-q1--a3">
+                        <input type="checkbox" id="q1a3" name="q1a3">
+                        <label for="q1a3">Cras accumsan elit a est gravida, sit amet malesuada metus tristique.</label>
+                    </div>
+
+            </div><!--.form-q1-->
+
+            <div class="test-form form-q2">
+                    <h2>2. Etiam pharetra sapien in consectetur bibendum. Curabitur sodales semper massa?</h2>
+
+                    <input class="test-form--input" type="text">
+
+            </div><!--.form-q2-->
+
+            <div class="test-form form-q3">
+                    <h2>3. Vestibulum mattis urna et iaculis mollis. Nam cursus dictum sapien, a venenatis tellus accumsan non.</h2>
+
+                    <div class="form-answer form-q3--a1">
+                        <input type="checkbox" id="q3a1" name="q3a1">
+                        <label for="q3a1">Donec a vehicula arcu.</label>
+                    </div>      
+
+                    <div class="form-answer form-q3--a2">
+                        <input type="checkbox" id="q3a2" name="q3a2">
+                        <label for="q3a2">Pellentesque pellentesque nisi justo.</label>
+                    </div>
+
+                    <div class="form-answer form-q3--a3">
+                        <input type="checkbox" id="q3a3" name="q3a3">
+                        <label for="q3a3">In tempor odio ornare ut.</label>
+                    </div>
+
+                    <div class="form-answer form-q3--a3">
+                        <input type="checkbox" id="q3a3" name="q3a3">
+                        <label for="q3a3">Nam ac sem venenatis, vulputate sem eget, varius velit.</label>
+                    </div>
+
+                    <div class="form-answer form-q3--a3">
+                        <input type="checkbox" id="q3a3" name="q3a3">
+                        <label for="q3a3">Aliquam urna sapien, convallis a porta vel, iaculis quis nisl.</label>
+                    </div>
+
+            </div><!--.form-q3-->
+
+            <div class="test-form form-q4">
+                    <h2>4. Suspendisse finibus condimentum est luctus at?</h2>
+                    <!-- <input class="test-range--input" type="range" min="0" max="10"> -->
+
+                    <div class="slider">
+                        <div class="track">
+                            <span class="runner"></span>
+                        </div>
+                        <input type="range" min="0" max="10" step="1" />
+                    </div>
+                
+                    <div class="range-input--label">
+                        <ul>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                        </ul>
+                    </div>
+
+            </div><!--.form-q4-->
+
+            <div class="submit-input--holder">
+                <input class="test-form--submit" type="submit" value="Submit">
+            </div>
+    
+        </form><!--#testForm-->
+
+    </section><!--form-wrapper-->
+
+    <footer>
+
+        <div class="footer-content">
+            <p class="footer-rights">© 2019 Inspired Thinking Group (ITG) Limited</p>
+
+            <img class="footer-img" src="./img/logo-dark.png" alt="">
+        </div>
+
+    </footer>
+</body>
+</html>
+
+<script src="range.js"></script>
