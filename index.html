@@ -32,23 +32,23 @@
 
     <section class="form-wrapper">
         
-        <form id="testForm" action="">
+        <form id="testForm" action="" name='testForm'>
             
-            <div class="test-form form-q1">
+            <div class="test-form">
                     <h2>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at suscipit urna?</h2>
 
-                    <div class="form-answer form-q1--a1">
-                        <input type="checkbox" id="q1a1" name="q1a1">
+                    <div class="form-answer form-q1 form-q1--a1">
+                        <input type="checkbox" id="q1a1" class='form-q1--input' name="q1">
                         <label for="q1a1">Vivamus eleifend dapibus justo sit amet pharetra.</label>
                     </div>      
 
-                    <div class="form-answer form-q1--a2">
-                        <input type="checkbox" id="q1a2" name="q1a2">
+                    <div class="form-answer form-q1 form-q1--a2">
+                        <input type="checkbox" id="q1a2" class='form-q1--input' name="q1">
                         <label for="q1a2">Nullam viverra gravida orci id imperdiet.</label>
                     </div>
 
-                    <div class="form-answer form-q1--a3">
-                        <input type="checkbox" id="q1a3" name="q1a3">
+                    <div class="form-answer form-q1 form-q1--a3">
+                        <input type="checkbox" id="q1a3" class='form-q1--input' name="q1">
                         <label for="q1a3">Cras accumsan elit a est gravida, sit amet malesuada metus tristique.</label>
                     </div>
 
@@ -57,35 +57,35 @@
             <div class="test-form form-q2">
                     <h2>2. Etiam pharetra sapien in consectetur bibendum. Curabitur sodales semper massa?</h2>
 
-                    <input class="test-form--input" type="text">
+                    <input id="q2Input" class="test-form--input" type="text">
 
             </div><!--.form-q2-->
 
             <div class="test-form form-q3">
                     <h2>3. Vestibulum mattis urna et iaculis mollis. Nam cursus dictum sapien, a venenatis tellus accumsan non.</h2>
 
-                    <div class="form-answer form-q3--a1">
-                        <input type="checkbox" id="q3a1" name="q3a1">
+                    <div class="form-answer form-q3 form-q3--a1">
+                        <input type="checkbox" id="q3a1" class='form-q3--input' name="q3">
                         <label for="q3a1">Donec a vehicula arcu.</label>
                     </div>      
 
-                    <div class="form-answer form-q3--a2">
-                        <input type="checkbox" id="q3a2" name="q3a2">
+                    <div class="form-answer form-q3 form-q3--a2">
+                        <input type="checkbox" id="q3a2" class='form-q3--input' name="q3">
                         <label for="q3a2">Pellentesque pellentesque nisi justo.</label>
                     </div>
 
-                    <div class="form-answer form-q3--a3">
-                        <input type="checkbox" id="q3a3" name="q3a3">
+                    <div class="form-answer form-q3 form-q3--a3">
+                        <input type="checkbox" id="q3a3" class='form-q3--input' name="q3">
                         <label for="q3a3">In tempor odio ornare ut.</label>
                     </div>
 
-                    <div class="form-answer form-q3--a3">
-                        <input type="checkbox" id="q3a3" name="q3a3">
+                    <div class="form-answer form-q3 form-q3--a4">
+                        <input type="checkbox" id="q3a4" class='form-q3--input' name="q3">
                         <label for="q3a3">Nam ac sem venenatis, vulputate sem eget, varius velit.</label>
                     </div>
 
-                    <div class="form-answer form-q3--a3">
-                        <input type="checkbox" id="q3a3" name="q3a3">
+                    <div class="form-answer form-q3 form-q3--a5">
+                        <input type="checkbox" class='form-q3--input' id="q3a5" name="q3">
                         <label for="q3a3">Aliquam urna sapien, convallis a porta vel, iaculis quis nisl.</label>
                     </div>
 
@@ -121,7 +121,8 @@
             </div><!--.form-q4-->
 
             <div class="submit-input--holder">
-                <input class="test-form--submit" type="submit" value="Submit">
+              <p id="submitInfo" class="submit-info">Complete the form to Submit</p>
+                <button id='submitBtn' class="test-form--submit" type="submit" value="Submit" disabled>Submit</button>
             </div>
     
         </form><!--#testForm-->
@@ -137,7 +138,8 @@
         </div>
 
     </footer>
+    
 </body>
 </html>
 
-<script src="range.js"></script>
+<script src="script.js"></script>

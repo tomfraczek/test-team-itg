@@ -152,7 +152,9 @@ body{
   .submit-input--holder{
       width:100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
   }
 
   .test-form--submit{
@@ -160,6 +162,16 @@ body{
     background: #f99d27;
     border: none;
     padding: 10px 30px;
+  }
+
+  .test-form--submit:disabled,
+  .test-form--submit[disabled]{
+    background: grey;
+  }
+
+  .test-form--submit:disabled:hover,
+  .test-form--submit[disabled]:hover{
+    cursor:not-allowed;
   }
 
   footer{
@@ -208,4 +220,12 @@ body{
     max-width: 1200px;
     margin: auto;
   }
+}
+
+.hidden{
+  display: none;
+}
+
+.submit-info{
+  color:#f99d27;
 }
